@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?nig1b');
+  src:  url('fonts/icons.eot?nig1b#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?nig1b') format('truetype'),
+    url('fonts/icons.woff?nig1b') format('woff'),
+    url('fonts/icons.svg?nig1b#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e905";
+}
+.icon-arrow-right:before {
+  content: "\e906";
+}
+.icon-p:before {
+  content: "\e904";
+}
+.icon-car:before {
+  content: "\e902";
+}
+.icon-train:before {
+  content: "\e903";
+}
+.icon-triangle:before {
+  content: "\e901";
+}
+.icon-clock:before {
+  content: "\e900";
+}
+.icon-close-thin:before {
+  content: "\e907";
+}

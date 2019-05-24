@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?jjjp8t');
+  src:  url('fonts/icons.eot?jjjp8t#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?jjjp8t') format('truetype'),
+    url('fonts/icons.woff?jjjp8t') format('woff'),
+    url('fonts/icons.svg?jjjp8t#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-creator:before {
+  content: "\e90c";
+}
+.icon-designer:before {
+  content: "\e90d";
+}
+.icon-developer:before {
+  content: "\e90e";
+}
+.icon-arrow-next:before {
+  content: "\e90a";
+}
+.icon-arrow-prev:before {
+  content: "\e90b";
+}
+.icon-close-thin:before {
+  content: "\e909";
+}
+.icon-arrow-up:before {
+  content: "\e900";
+}
+.icon-clock:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-info:before {
+  content: "\e903";
+}
+.icon-nav-left-thin:before {
+  content: "\e904";
+}
+.icon-nav-right:before {
+  content: "\e905";
+}
+.icon-nav-right-thin:before {
+  content: "\e906";
+}
+.icon-triangle-up:before {
+  content: "\e907";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+

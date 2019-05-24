@@ -1,0 +1,16 @@
+templates_c
+.idea
+cache
+configs
+/vendor
+composer.lock
+#config.php
+
+
+node_modules/
+gulpfile.js
+img/old/
+
+*.sublime-project
+
+*.sublime-workspace
