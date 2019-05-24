@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff2') format('woff2'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'YuGothic-Regular';
+  src: url('fonts/YuGothic-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/YuGothic-Regular.woff') format('woff'), url('fonts/YuGothic-Regular.ttf')  format('truetype'), url('fonts/YuGothic-Regular.svg#YuGothic-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'YuGothic-Bold';
+  src: url('fonts/YuGothic-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/YuGothic-Bold.woff') format('woff'), url('fonts/YuGothic-Bold.ttf')  format('truetype'), url('fonts/YuGothic-Bold.svg#YuGothic-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

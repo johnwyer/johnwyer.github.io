@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('fonts/HelveticaNeueLTStd-Cn.eot');
+    src: url('fonts/HelveticaNeueLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2'),
+        url('fonts/HelveticaNeueLTStd-Cn.woff') format('woff'),
+        url('fonts/HelveticaNeueLTStd-Cn.ttf') format('truetype'),
+        url('fonts/HelveticaNeueLTStd-Cn.svg#HelveticaNeueLTStd-Cn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std Bold';
+    src: url('fonts/HelveticaNeueLTStd-BlkCn.eot');
+    src: url('fonts/HelveticaNeueLTStd-BlkCn.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HelveticaNeueLTStd-BlkCn.woff2') format('woff2'),
+        url('fonts/HelveticaNeueLTStd-BlkCn.woff') format('woff'),
+        url('fonts/HelveticaNeueLTStd-BlkCn.ttf') format('truetype'),
+        url('fonts/HelveticaNeueLTStd-BlkCn.svg#HelveticaNeueLTStd-BlkCn') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times LT Std';
+    src: url('fonts/TimesLTStd-Roman.eot');
+    src: url('fonts/TimesLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TimesLTStd-Roman.woff2') format('woff2'),
+        url('fonts/TimesLTStd-Roman.woff') format('woff'),
+        url('fonts/TimesLTStd-Roman.ttf') format('truetype'),
+        url('fonts/TimesLTStd-Roman.svg#TimesLTStd-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans CJK Japanese';
+    font-style: normal;
+    font-display: block;
+    font-weight: 100;
+    src: url('fonts/NotoSansCJKjp/Thin/NotoSansCJKjp-Thin.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/Thin/NotoSansCJKjp-Thin.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/Thin/NotoSansCJKjp-Thin.min.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans CJK Japanese';
+    font-style: normal;
+    font-display: block;
+    font-weight: 200;
+    src: url('fonts/NotoSansCJKjp/Light/NotoSansCJKjp-Light.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/Light/NotoSansCJKjp-Light.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/Light/NotoSansCJKjp-Light.min.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans CJK Japanese';
+    font-style: normal;
+    font-display: block;
+    font-weight: 300;
+    src: url('fonts/NotoSansCJKjp/DemiLight/NotoSansCJKjp-DemiLight.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/DemiLight/NotoSansCJKjp-DemiLight.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/DemiLight/NotoSansCJKjp-DemiLight.min.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans CJK Japanese';
+    font-style: normal;
+    font-display: block;
+    font-weight: 400;
+    src: url('fonts/NotoSansCJKjp/Regular/NotoSansCJKjp-Regular.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/Regular/NotoSansCJKjp-Regular.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/Regular/NotoSansCJKjp-Regular.min.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans CJK Japanese';
+    font-style: normal;
+    font-display: block;
+    font-weight: 500;
+    src: url('fonts/NotoSansCJKjp/Medium/NotoSansCJKjp-Medium.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/Medium/NotoSansCJKjp-Medium.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/Medium/NotoSansCJKjp-Medium.min.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans CJK Japanese';
+    font-style: normal;
+    font-display: block;
+    font-weight: 700;
+    src: url('fonts/NotoSansCJKjp/Bold/NotoSansCJKjp-Bold.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/Bold/NotoSansCJKjp-Bold.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/Bold/NotoSansCJKjp-Bold.min.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans CJK Japanese';
+    font-style: normal;
+    font-display: block;
+    font-weight: 900;
+    src: url('fonts/NotoSansCJKjp/Black/NotoSansCJKjp-Black.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/Black/NotoSansCJKjp-Black.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/Black/NotoSansCJKjp-Black.min.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK Japanese Mono';
+    font-style: normal;
+    font-display: block;
+    font-weight: 400;
+    src: url('fonts/NotoSansCJKjp/Mono-Regular/NotoSansMonoCJKjp-Regular.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/Mono-Regular/NotoSansMonoCJKjp-Regular.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/Mono-Regular/NotoSansMonoCJKjp-Regular.min.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans CJK Japanese Mono';
+    font-style: normal;
+    font-display: block;
+    font-weight: 700;
+    src: url('fonts/NotoSansCJKjp/Mono-Bold/NotoSansMonoCJKjp-Bold.min.woff2') format('woff2'),
+        url('fonts/NotoSansCJKjp/Mono-Bold/NotoSansMonoCJKjp-Bold.min.woff') format('woff'),
+        url('fonts/NotoSansCJKjp/Mono-Bold/NotoSansMonoCJKjp-Bold.min.ttf') format('truetype');
+}
+
+.noto {
+    font-family: 'Noto Sans CJK Japanese', serif;
+    font-style: normal;
+}
+
+.noto.\+mono {
+    font-family: 'Noto Sans CJK Japanese Mono';
+    font-style: normal;
+}
+
+.noto.\+250 {
+    font-weight: 100;
+}
+
+.noto.\+300 {
+    font-weight: 200;
+}
+
+.noto.\+350 {
+    font-weight: 300;
+}
+
+.noto.\+400 {
+    font-weight: 400;
+}
+
+.noto.\+500 {
+    font-weight: 500;
+}
+
+.noto.\+700 {
+    font-weight: 700;
+}
+
+.noto.\+900 {
+    font-weight: 900;
+}
