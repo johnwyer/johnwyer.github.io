@@ -169,7 +169,22 @@ and (orientation: portrait) {
         transition: all 0.2s ease 0s;
         width: 100%;
         z-index: 111;
+
+        transform: none;
+        height: auto;
     }
+
+    #header .header-top-menu.active {
+        animation: none;
+        display: inline-flex;
+        height: auto;
+    }
+
+    #header .header-top-menu.out {
+        animation:none;
+        animation-fill-mode: forwards;
+        display: inline-flex;
+    }    
 
     #header .header-menu {
         float: none;
