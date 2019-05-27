@@ -52,6 +52,7 @@ $(function() {
         functionPosition: function(instance, helper, position) {
             position.coord.top -= 21;
             position.coord.left += 10;
+
             return position;
         }
     });
@@ -70,7 +71,7 @@ $(function() {
 
         if (windowTop > startShow) {
             go_top.addClass('fixed');
-            go_top.css('bottom', 25)
+            go_top.css('bottom', 25);
             if (!go_top.is(':visible')) {
                 go_top.stop().fadeIn();
             }
@@ -133,6 +134,7 @@ $(function() {
 
 
     var timeOutMenu;
+    var body = $('body');
 
     function mobileMenu() {
         $('#btn-open-menu').on('click', function(e) {
@@ -140,14 +142,14 @@ $(function() {
 
             var $this = $(this);
             clearTimeout(timeOutMenu);
-            if (!$("body").hasClass('mobile-menu-open')) {
+            if (!body.hasClass('mobile-menu-open')) {
                 header_nav.show();
                 setTimeout(function() {
                     $this.addClass('active');
-                    $("body").addClass('mobile-menu-open');
+                    body.addClass('mobile-menu-open');
                 }, 20);
             } else {
-                $("body").removeClass('mobile-menu-open');
+                body.removeClass('mobile-menu-open');
                 $this.removeClass('active');
                 timeOutMenu = setTimeout(function() {
                     header_nav.hide();
@@ -158,7 +160,7 @@ $(function() {
         $(".btn-close-menu").on("click", function(e) {
             e.preventDefault();
 
-            $("body").removeClass('mobile-menu-open');
+            body.removeClass('mobile-menu-open');
             $(this).removeClass('active');
             $('#btn-open-menu').removeClass('active');
             timeOutMenu = setTimeout(function() {
@@ -166,12 +168,12 @@ $(function() {
             }, 200);
         });
 
-        $('body').on('click', function(e) {
+        body.on('click', function(e) {
             var target = $(e.target),
                 hasTargets = target.is("#header-nav") || target.is("#header-nav *") || target.is("#btn-open-menu") || target.is("#btn-open-menu *");
 
             if (!hasTargets && winWidth() <= 768) {
-                $('body').removeClass('mobile-menu-open');
+                body.removeClass('mobile-menu-open');
                 $('#btn-open-menu').removeClass('active');
                 $('#btn-close-menu').removeClass('active');
                 timeOutMenu = setTimeout(function() {
@@ -184,8 +186,8 @@ $(function() {
 
 
     //
-    $('body').on('click', '#btn-start-movie', function(e) {
-        $('body').addClass('modal-video-opened')
+    body.on('click', '#btn-start-movie', function(e) {
+        body.addClass('modal-video-opened')
     })
 
     $('#modal-video').on('show.bs.modal', function(event) {
@@ -206,11 +208,11 @@ $(function() {
     //
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 151) {
-            if (!$('body').hasClass("sticky-header")) {
-                $('body').addClass("sticky-header");
+            if (!body.hasClass("sticky-header")) {
+                body.addClass("sticky-header");
             }
         } else {
-            $('body').removeClass("sticky-header");
+            body.removeClass("sticky-header");
         }
     });
 
@@ -265,7 +267,7 @@ $(function() {
 
     //
     $(window).load(function() {
-        $('body').addClass('loaded');
+        body.addClass('loaded');
         setTimeout(function() {
             $('#preloader').remove();
         }, 1500);
