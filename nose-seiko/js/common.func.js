@@ -1,5 +1,4 @@
-$(function () {
-
+$(function() {
     var header = $('#header');
     var body = $('body');
     var go_top = $('#go-top'),
@@ -7,9 +6,8 @@ $(function () {
     var header_nav = $("#header-top-menu");
     var startMobMenu = false;
 
-
-    $(window).on('resize', function () {
-        winSize();  
+    $(window).on('resize', function() {
+        winSize();
 
         if (!startMobMenu) {
             mobileMenu();
@@ -18,40 +16,40 @@ $(function () {
 
         if (winSize() >= 767) {
             $("#header-nav").show();
-        }        
+        }
 
     });
 
     if (!startMobMenu) {
         mobileMenu();
         startMobMenu = true;
-    }    
-
+    }
 
     var timeOutMenu;
+
     function mobileMenu() {
-        $('#btn-open-menu').on('click', function (e) {
+        $('#btn-open-menu').on('click', function(e) {
             e.preventDefault();
             var _this = $(this);
             clearTimeout(timeOutMenu);
             if (!body.hasClass('mobile-menu-open') && !body.hasClass('menu-opened')) {
                 header_nav.show();
                 header_nav.removeClass('out').addClass('active');
-                setTimeout(function () {
+                setTimeout(function() {
                     _this.addClass('active');
                     body.addClass('mobile-menu-open');
-                    setTimeout(function(){
+                    setTimeout(function() {
                         body.addClass('menu-opened');
                     }, 500);
                 }, 20);
             } else {
-                if(body.hasClass('menu-opened')) {
+                if (body.hasClass('menu-opened')) {
                     body.removeClass('mobile-menu-open');
                     _this.removeClass('active');
-                    timeOutMenu = setTimeout(function () {
+                    timeOutMenu = setTimeout(function() {
                         header_nav.removeClass('active').addClass('out');
-                        setTimeout(function(){
-                            header_nav.hide() 
+                        setTimeout(function() {
+                            header_nav.hide()
                             body.removeClass('menu-opened');
                         }, 500);
 
@@ -60,26 +58,26 @@ $(function () {
             }
         });
 
-        $("#btn-close-menu").on("click", function (e) {
+        $("#btn-close-menu").on("click", function(e) {
             e.preventDefault();
             body.removeClass('mobile-menu-open');
             $(this).removeClass('active');
             $('#btn-open-menu').removeClass('active');
-            timeOutMenu = setTimeout(function () {
+            timeOutMenu = setTimeout(function() {
                 header_nav.hide();
-            }, 200)
+            }, 200);
         });
 
-        body.on('click', function (e) {
+        body.on('click', function(e) {
             var target = $(e.target),
                 hasTargets = target.is("#header-top-menu") || target.is("#header-top-menu *") || target.is("#btn-open-menu") || target.is("#btn-open-menu *");
             if (!hasTargets && winSize() <= 1007) {
                 body.removeClass('mobile-menu-open');
                 $('#btn-open-menu').removeClass('active');
                 $('#btn-close-menu').removeClass('active');
-                timeOutMenu = setTimeout(function () {
+                timeOutMenu = setTimeout(function() {
                     header_nav.hide();
-                }, 200)
+                }, 200);
             }
         });
     }
@@ -102,11 +100,11 @@ $(function () {
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            }            
+            }
         });
     }
 
- 
+
     if ($('.js-cols').length > 0) {
         $('.js-cols').matchHeight({ remove: false });
     }
@@ -122,8 +120,7 @@ $(function () {
 
         if (windowTop > startShow) {
             go_top.addClass('fixed in');
-        }
-        else {
+        } else {
             go_top.removeClass('in')
         }
 
@@ -137,27 +134,26 @@ $(function () {
 
     }
 
-    go_top.on('click', function (e) {
+    go_top.on('click', function(e) {
         e.preventDefault();
-        $('html,body').animate({scrollTop: 0}, 1500, 'easeInOutCubic');
+        $('html,body').animate({ scrollTop: 0 }, 1500, 'easeInOutCubic');
     });
 
-    goTop();    
-    $(window).on('resize scroll', function () {
+    goTop();
+    $(window).on('resize scroll', function() {
         goTop();
     });
 
 
-    $(".products-menu a").on("click", function (e) {
+    $(".products-menu a").on("click", function(e) {
         e.preventDefault();
 
         var id = $(this).attr("href");
         var topOffset = 9;
         var offset = $(id).offset().top - 9;
 
-        $('html,body').animate({scrollTop: offset}, 2000, 'easeInOutCubic');
+        $('html,body').animate({ scrollTop: offset }, 2000, 'easeInOutCubic');
     });
-
 });
 
 function winSize() {
